@@ -23,3 +23,33 @@ Some points to keep in mind:
 ### The Twitter Application Programming Interface
 
 Twitter provides a very rich REST API for querying the system, accessing data, and control your account. You can [read more about the Twitter API](https://dev.twitter.com/docs)
+
+### Python 2.7.3 environment
+
+If you are new to Python, you may find it valuable to work through the [codeacademy Python tutorials](http://www.codecademy.com/tracks/python). Focus on tutorials 1-9, plus tutorial 12 on File IO. In addition, many students have recommended [Google's Python class](https://developers.google.com/edu/python/).
+
+You will need to establish a Python programming environment to complete this assignment. You can install Python yourself by [downloading it from the Python website](https://www.python.org/download/), or can use the [class virtual machine](https://www.python.org/download/).
+
+### Unicode strings
+
+Strings in the twitter data prefixed with the letter "u" are unicode strings. For example:
+
+```
+u"This is a string"
+```
+
+Unicode is a standard for representing a much larger variety of characters beyond the roman alphabet (greek, russian, mathematical symbols, logograms from non-phonetic writing systems such as kanji, etc.)
+
+In most circumstances, you will be able to use a [unicode](https://docs.python.org/2/library/stdtypes.html#str.encode) object just like a string.
+
+If you encounter an error involving printing unicode, you can use the encode method to properly print the international characters, like this:
+
+```
+unicode_string = u"aaaÃ Ã§Ã§Ã§Ã±Ã±Ã±"
+encoded_string = unicode_string.encode('utf-8')
+print encoded_string
+```
+
+### Getting Started
+
+Once again: If you are new to Python, many students have recommended [Google's Python class](https://developers.google.com/edu/python/).
