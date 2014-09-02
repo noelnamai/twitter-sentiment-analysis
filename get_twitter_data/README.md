@@ -19,7 +19,6 @@ The steps below will help you set up your twitter account to be able to access t
 referred to as "Consumer key" in some places in the code or on the web; they are synonyms.) Open twitterstream.py and 
 set the variables corresponding to the api key, api secret, access token, and access secret. You will see code like the 
 below:
-8. 
 ```
 api_key = "<Enter api key>"
 api_secret = "<Enter api secret>"
@@ -27,6 +26,8 @@ access_token_key = "<Enter your access token key here>"
 access_token_secret = "<Enter your access token secret here>"
 ```
 8. Run the following and make sure you see data flowing and that no errors occur.
+
+
 ```
 $ python twitterstream.py > output.txt
 ```
