@@ -36,16 +36,16 @@ import json
 
 Then, to parse the data in ```output.txt```, you want to apply the function ```json.loads``` to every line in the file.
 
-This function will parse the json data and return a python data stucture; in this case, it returns a dictionary. If needed, take a moment to read the documentation for Python dictionaries.
+This function will parse the json data and return a python data stucture; in this case, it returns a dictionary. If needed, take a moment to [read the documentation for Python dictionaries](https://docs.python.org/2/library/stdtypes.html#typesmapping).
 
-You can read the Twitter documentation to understand what information each tweet contains and how to access it, but it's not too difficult to deduce the structure by direct inspection.
+You can read the [Twitter documentation](https://dev.twitter.com/docs/platform-objects/tweets) to understand what information each tweet contains and how to access it, but it's not too difficult to deduce the structure by direct inspection.
 
 Your script should print to stdout the sentiment of each tweet in the file, one numeric sentiment score per line. The first score should correspond to the first tweet, the second score should correspond to the second tweet, and so on. If you sort the scores, they won't match up. If you sort the tweets, they won't match up. If you put the tweets into a dictionary, the order will not be preserved. Once again: The nth line of the file you submit should contain only a single number that represents the score of the nth tweet in the input file!
 
 NOTE: You must provide a score for every tweet in the sample file, even if that score is zero. You can assume the sample file will only include English tweets and no other types of streaming messages.
 
-To grade your submission, we will run your program on a tweet file formatted the same way as the output.txt file you generated in Problem 1.
+To grade your submission, we will run your program on a tweet file formatted the same way as the ```output.txt``` file you generated in Problem 1.
 
-Hint: This is real-world data, and it can be messy! Refer to the twitter documentation to understand more about the data structure you are working with. Don't get discouraged, and ask for help on the forums if you get stuck!
+Hint: This is real-world data, and it can be messy! Refer to the [twitter documentation](https://dev.twitter.com/docs/platform-objects/tweets) to understand more about the data structure you are working with. Don't get discouraged, and ask for help on the forums if you get stuck!
 
-What to turn in: The file tweet_sentiment.py after you've verified that it returns the correct answers.
+What to turn in: The file ```tweet_sentiment.py``` after you've verified that it returns the correct answers.
