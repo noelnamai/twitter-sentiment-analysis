@@ -26,6 +26,7 @@ api_secret = "<Enter api secret>"
 access_token_key = "<Enter your access token key here>"
 access_token_secret = "<Enter your access token secret here>"
 ```
+
 8. Run the following and make sure you see data flowing and that no errors occur.
 ```
 $ python twitterstream.py > output.txt
