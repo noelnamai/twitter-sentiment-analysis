@@ -25,14 +25,15 @@ api_secret = "<Enter api secret>"
 access_token_key = "<Enter your access token key here>"
 access_token_secret = "<Enter your access token secret here>"
 ```
-8. Run the following and make sure you see data flowing and that no errors occur.
+Run the following and make sure you see data flowing and that no errors occur.
 
 
 ```
 $ python twitterstream.py > output.txt
 ```
 This command pipes the output to a file. Stop the program with Ctrl-C, but wait at least 3 minutes for data to accumulate. Keep the file output.txt for the duration of the assignment; we will be reusing it in later problems. Don't use someone else's file; we will check for uniqueness in other parts of the assignment.
-9. If you wish, modify the file to use the [twitter search API](https://dev.twitter.com/docs/api/1.1/get/search/tweets) 
+
+If you wish, modify the file to use the [twitter search API](https://dev.twitter.com/docs/api/1.1/get/search/tweets) 
 to search for specific terms. For example, to search for the term "microsoft", you can pass the following url to the 
 twitterreq function:
 ```
